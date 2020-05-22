@@ -90,12 +90,12 @@ pipeline {
         }
 
 
-//stage ('deploy'){
-  // steps {
-	//script {
-      // bat ''' D:\\Laptop\Software\\curl-7.68.0-win64-mingw\\bin\\curl http://localhost:8081/repository/sbproject/com/javatpoint/Cubesb/1/Cubesb-1.war -o D:\\Laptop\\Software\\Tomcat\\apache-tomcat-8.5.51\\webapps\\Cubesb.war'''
-	//}
-	//}
-	//}
+stage ('deploy'){
+  steps {
+	script {
+      bat ''' D:\\Laptop\Software\\curl-7.68.0-win64-mingw\\bin\\curl http://localhost:8081/repository/sbproject/	com/javatpoint/Cubesb/4/Cubesb-4.war -o D:\\Laptop\\Software\\Tomcat\\apache-tomcat-8.5.51\\webapps\\*.war'''
+	}
+	}
+	}
     }
 }
